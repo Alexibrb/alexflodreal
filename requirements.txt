@@ -1,9 +1,6 @@
 streamlit
 pandas
-os
-time
 numpy
 plotly.graph_objects
-io
 openpyxl
 
