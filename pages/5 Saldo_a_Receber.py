@@ -121,4 +121,4 @@ if os.path.exists('parametros.csv'):
     st.success(f" # 📌 R$ {receber:.2f}")
 
 else:
-    st.error("## Parâmetros Não Configurados!")
+    st.error("## Nenhuma Operação Encontrada")
