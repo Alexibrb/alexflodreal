@@ -97,7 +97,7 @@ else:
     st.write("")
 ############################## Parametros #####################################
 
-if os.path.exists('parametros.csv'):
+if os.path.exists('parametros.csv') and os.path.exists('resultados.csv'):
 
     col1, col2, col3 = st.columns(3)
 
