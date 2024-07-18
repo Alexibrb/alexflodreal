@@ -23,7 +23,6 @@ with st.sidebar:
 
 spinner()
 
-
 ######### Calculos#################################################################
 op = "Operador"
 bancainicial = 0
@@ -121,4 +120,4 @@ if os.path.exists('parametros.csv') and os.path.exists('resultados.csv'):
     st.success(f" # 📌 R$ {receber:.2f}")
 
 else:
-    st.error("## Nenhuma Operação Encontrada")
+    st.error("# Você ainda não cadastrou operações")

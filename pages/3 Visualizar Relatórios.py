@@ -122,12 +122,16 @@ with st.container():
                     mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
                 )
 
-
+            delete_confirmation = st.checkbox("Marque para Apagar os Resultados.")
             btn_resetr = st.button("Apagar Resultados", type="primary")
 
-            if btn_resetr:
-                os.remove('resultados.csv')
-                st.experimental_rerun()
+            if delete_confirmation:
+                btn_resetr = st.button("Apagar Resultados", type="primary")
+                if btn_resetr:
+                    os.remove('resultados.csv')
+                    st.experimental_rerun()
+
+
 
         with col2:
             st.info('# :loudspeaker: ATENÇÃO!!! ')

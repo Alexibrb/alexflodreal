@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import io
 import openpyxl
 import time
 from funcoes import *
@@ -72,11 +73,12 @@ if saldo >= Meta:
                 mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
             )
 
-        btn_resetr = st.button("Apagar Resultados", type="primary")
-
-        if btn_resetr:
-            os.remove('resultados.csv')
-            st.experimental_rerun()
+        delete_confirmation = st.checkbox("Marque para  Apagar os resultados.")
+        if delete_confirmation:
+            btn_resetr = st.button("Apagar Resultados", type="primary")
+            if btn_resetr:
+                os.remove('resultados.csv')
+                st.experimental_rerun()
 
     with col2:
         st.info('# :loudspeaker: ATENÇÃO!!! ')

@@ -5,6 +5,7 @@ import time
 from funcoes import *
 
 
+
 ########## CONFIGURAÇÕES
 st.set_page_config(
     page_title="Dashboard",
@@ -36,10 +37,14 @@ if os.path.exists('parametros.csv'):
     dnop = int(a.iloc[4])
     st.success("## Parâmetros já configurados")
     if os.path.exists('parametros.csv'):
-        btn_resetp1 = st.button("Alterar Parâmetros", type="primary")
-        if btn_resetp1:
-            os.remove('parametros.csv')
-            st.experimental_rerun()
+
+        delete_confirmation = st.checkbox("Marque para Alterar os  Parâmetros.")
+
+        if delete_confirmation:
+            btn_resetp1 = st.button("Alterar Parâmetros", type="primary")
+            if btn_resetp1:
+                os.remove('parametros.csv')
+                st.experimental_rerun()
 
 
 
