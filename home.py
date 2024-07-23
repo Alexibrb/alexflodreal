@@ -25,12 +25,9 @@ link2 = "grafico.png"
 icone = "icone.jpeg"
 op = "Operador"
 
-
 st.logo(link2, icon_image=link2)
 st.markdown('# Bem-vindo ao Sistema')
 
-
-st.markdown(css, unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 
 with col1:
