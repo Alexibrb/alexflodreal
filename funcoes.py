@@ -93,8 +93,9 @@ def estilos():
             margin: 3px 3px;
             
         }
-        .st-emotion-cache-1v0mbdj.e115fcil1{
-            border-radius: 15px;
+        .imagem {
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
         }
 
