@@ -93,7 +93,7 @@ def estilos():
             margin: 3px 3px;
             
         }
-        .st-emotion-cache-1v0mbdj e115fcil1{
+        .st-emotion-cache-1v0mbdj e115fcil1.img{
             border-radius: 15px;
 
         }
