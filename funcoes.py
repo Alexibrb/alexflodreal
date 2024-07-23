@@ -93,6 +93,10 @@ def estilos():
             margin: 3px 3px;
             
         }
+        .st-emotion-cache-1v0mbdj e115fcil1{
+            border-radius: 15px;
+
+        }
 
         </style>
         """, unsafe_allow_html=True)
