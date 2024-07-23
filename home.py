@@ -34,15 +34,8 @@ with col1:
 
     st.image(link3, width=500)
     st.markdown(
-"""
-<script>
-document.querySelector('.stImage').setAttribute('id', 'minha-imagem');
-document.getElementById('minha-imagem').style.borderRadius = '8px';
-document.getElementById('minha-imagem').style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-// Outros estilos CSS que você deseja aplicar
-</script>
-""",
-unsafe_allow_html=True
+    f'<img src="{link3}" style="border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);" width="500">',
+    unsafe_allow_html=True
 )
 
 with col2:
