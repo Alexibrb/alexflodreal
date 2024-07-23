@@ -33,11 +33,7 @@ col1, col2 = st.columns(2)
 with col1:
 
     st.image(link3, width=500)
-    st.markdown(
-    f'<img src="{link3}" style="border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);" width="500">',
-    unsafe_allow_html=True
-)
-
+   
 with col2:
     if os.path.exists('parametros.csv'):
         tabelaconfig = pd.read_csv('parametros.csv', sep=",")
