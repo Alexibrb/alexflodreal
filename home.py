@@ -42,7 +42,7 @@ with col1:
     """,
     unsafe_allow_html=True
 )
-    st.image(link3, width=500)
+        st.image(link3, width=500)
 with col2:
     if os.path.exists('parametros.csv'):
         tabelaconfig = pd.read_csv('parametros.csv', sep=",")
