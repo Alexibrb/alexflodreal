@@ -66,6 +66,15 @@ def estilos():
         .stButton > button:hover {
             background-color: #262730;
             color: white;
+            padding: 25px 25px;  
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 10px;
+            cursor: pointer;
+            border: 1px solid;
+            border-radius: 8px;
+            width: 100%;
         }
         
         .st-emotion-cache-1zhiv0.e1f1d6gn0 {
