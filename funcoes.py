@@ -117,6 +117,15 @@ def estilos2():
         .stButton > button:hover {
             background-color: #262730;
             color: black;
+            padding:30px 30px;  
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 10px;
+            cursor: pointer;
+            border: 1px solid;margin: 10px 10px;
+            border-radius: 8px;
+            width: 100%;
         }
 
         .st-emotion-cache-1zhiv0.e1f1d6gn0 {
@@ -152,5 +161,15 @@ def estilos2():
         .stDownloadButton > button:hover {
             background-color: #262730;
             color: black;
+            padding: 25px 25px;  
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
         </style>
         """, unsafe_allow_html=True)
