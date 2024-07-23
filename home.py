@@ -34,16 +34,7 @@ st.markdown(css, unsafe_allow_html=True)
 col1, col2 = st.columns(2)
 
 with col1:
-    css = """
-<style>
-.imagem {
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Outros estilos CSS que você deseja aplicar */
-}
-</style>
-"""
-    st.markdown(css, unsafe_allow_html=True)
+   
     st.image(link3, width=500)
 with col2:
     if os.path.exists('parametros.csv'):
