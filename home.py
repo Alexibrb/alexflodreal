@@ -15,17 +15,6 @@ st.set_page_config(
 )
 titulo()
 #estilos()
-st.markdown(
-"""
-<script>
-document.querySelector('.stImage').setAttribute('id', 'minha-imagem');
-document.getElementById('minha-imagem').style.borderRadius = '8px';
-document.getElementById('minha-imagem').style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
-// Outros estilos CSS que você deseja aplicar
-</script>
-""",
-unsafe_allow_html=True
-)
 
 ########################################### Barra Lateral #######################################
 
@@ -44,6 +33,18 @@ col1, col2 = st.columns(2)
 with col1:
 
     st.image(link3, width=500)
+    st.markdown(
+"""
+<script>
+document.querySelector('.stImage').setAttribute('id', 'minha-imagem');
+document.getElementById('minha-imagem').style.borderRadius = '8px';
+document.getElementById('minha-imagem').style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
+// Outros estilos CSS que você deseja aplicar
+</script>
+""",
+unsafe_allow_html=True
+)
+
 with col2:
     if os.path.exists('parametros.csv'):
         tabelaconfig = pd.read_csv('parametros.csv', sep=",")
