@@ -91,7 +91,7 @@ with st.container():
             if btn_resetul1:
                 resultado = resultado.drop(resultado.index[-1])
                 resultado.to_csv('resultados.csv', index=False)
-                st.experimental_rerun()
+               
             st.table(tabela4)
 
         ##### Planilha 4
@@ -101,7 +101,7 @@ with st.container():
             if btn_resetul2:
                 resultado = resultado.drop(resultado.index[-1])
                 resultado.to_csv('resultados.csv', index=False)
-                st.experimental_rerun()
+                
             tabela3 = tabela2.style.format({'Resultado do Dia': '{:.2f}', 'Saldo Acumulado': '{:.2f}'})
             st.table(tabela3)
 
@@ -129,7 +129,7 @@ with st.container():
                 btn_resetr = st.button("Apagar Resultados", type="primary")
                 if btn_resetr:
                     os.remove('resultados.csv')
-                    st.experimental_rerun()
+                    
 
 
 
