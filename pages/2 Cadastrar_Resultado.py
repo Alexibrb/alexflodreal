@@ -78,7 +78,7 @@ if saldo >= Meta:
             btn_resetr = st.button("Apagar Resultados", type="primary")
             if btn_resetr:
                 os.remove('resultados.csv')
-                st.experimental_rerun()
+                
 
     with col2:
         st.info('# :loudspeaker: ATENÇÃO!!! ')
@@ -110,7 +110,7 @@ if os.path.exists('parametros.csv'):
                 data2.to_csv('resultados.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 time.sleep(1)
-                st.experimental_rerun()
+                
 
 
 
@@ -128,7 +128,7 @@ if os.path.exists('parametros.csv'):
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('resultados.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
-                st.experimental_rerun()
+                
 
 
 else:
