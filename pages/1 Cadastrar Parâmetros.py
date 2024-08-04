@@ -44,7 +44,7 @@ if os.path.exists('parametros.csv'):
             btn_resetp1 = st.button("Alterar Parâmetros", type="primary")
             if btn_resetp1:
                 os.remove('parametros.csv')
-                st.rerun()
+        
 
 
 
@@ -69,7 +69,7 @@ else:
         tabela1 = df.to_csv("parametros.csv", index=False)
 
         st.success("# Dados cadastros com sucesso!")
-        st.rerun()
+        
 
     else:
         st.error("# Insira os dados")
