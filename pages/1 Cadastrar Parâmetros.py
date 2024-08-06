@@ -44,6 +44,7 @@ if os.path.exists('parametros.csv'):
             btn_resetp1 = st.button("Alterar Parâmetros", type="primary")
             if btn_resetp1:
                 os.remove('parametros.csv')
+                st.experimental_rerun()
         
 
 
@@ -66,8 +67,8 @@ else:
         dnopi = dnop
         d = {"operador": op, "Capital": capitali, "Meta": metam, "Número de operações": nopmi, "Dias não operados": dnop}
         df = pd.DataFrame(data=d, index=[0])
-        tabela1 = df.to_csv("parametros.csv", index=False)
-
+        tabela1 = df.to_csv("parametros.csv", index=False
+        st.experimental_rerun()                   
         st.success("# Dados cadastros com sucesso!")
         
 
