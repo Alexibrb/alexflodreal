@@ -128,6 +128,7 @@ if os.path.exists('parametros.csv'):
                 df2 = pd.DataFrame(dados2, index=[0])
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('resultados.csv', index=False)
+                st.experimental_rerun()
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 
 
