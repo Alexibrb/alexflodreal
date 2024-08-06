@@ -55,8 +55,8 @@ else:
         operador = st.text_input("Digite seu nome")
         capitalinicial = st.number_input("Digite o Capital")
         meta = st.number_input("Digite a meta mensal")
-        nopm = st.number_input("Digite o número de operações no mês", 1)
-        dnop = st.number_input("Digite os dias não operados", 1)
+        nopm = st.number_input("Digite o número de operações no mês", 0)
+        dnop = st.number_input("Digite os dias não operados", 0)
         btn_cadastro = st.form_submit_button("Cadastrar")
 
     if btn_cadastro:
