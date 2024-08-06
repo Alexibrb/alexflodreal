@@ -125,7 +125,7 @@ with st.container():
                 )
 
             delete_confirmation = st.checkbox("Marque para Apagar os Resultados.")
-            btn_resetr = st.button("Apagar Resultados", type="primary")
+           
 
             if delete_confirmation:
                 btn_resetr = st.button("Apagar Resultados", type="primary")
