@@ -109,8 +109,9 @@ if os.path.exists('parametros.csv'):
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('resultados.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
+                time.sleep(2)
                 st.experimental_rerun()
-                time.sleep(1)
+                
                 
 
 
@@ -128,8 +129,9 @@ if os.path.exists('parametros.csv'):
                 df2 = pd.DataFrame(dados2, index=[0])
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('resultados.csv', index=False)
-                st.experimental_rerun()
                 st.success("# Cadastro Efetuado com sucesso!!!!")
+                time.sleep(2)
+                st.experimental_rerun()
                 
 
 
