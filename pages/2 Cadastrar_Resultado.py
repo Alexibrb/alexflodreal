@@ -109,6 +109,7 @@ if os.path.exists('parametros.csv'):
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('resultados.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
+                st.experimental_rerun()
                 time.sleep(1)
                 
 
